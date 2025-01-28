@@ -33,13 +33,3 @@ mvn test
 - `tests/CoinDeskAPITest.java`: Contains the test cases for the API.
 - `pom.xml`: Maven configuration file with dependencies.
 
-## Features
-
-- Validates HTTP status codes.
-- Checks for the presence of USD, GBP, and EUR.
-- Validates GBP description.
-
-## Future Enhancements
-
-- Add support for more endpoints.
-- Introduce parameterized tests.
