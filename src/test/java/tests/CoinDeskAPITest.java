@@ -18,16 +18,16 @@ public class CoinDeskAPITest {
 
     @Test
     public void testGetBitcoinPriceIndex() {
-        // Send GET request and extract response
+        //  GET request and  the response
         Response response = given()
                 .when()
                 .get("/bpi/currentprice.json")
                 .then()
-                .statusCode(200)
+                .statusCode(200) // Verify HTTP status code is 200
                 .extract()
                 .response();
 
-        // Parse response body as a String
+       // Parsing and validating the response
         String responseBody = response.getBody().asString();
 
         // Validate presence of USD, GBP, EUR
